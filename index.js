@@ -9,7 +9,7 @@ const crypto = require('crypto');
 
 // ================= CONFIGURATION =================
 const CONFIG = {
-    // API KEYS
+    // API KEYS (Set these in Render Environment Variables)
     API_KEY: process.env.BLOFIN_API_KEY,
     API_SECRET: process.env.BLOFIN_API_SECRET,
     PASSPHRASE: process.env.BLOFIN_PASSPHRASE,
@@ -387,4 +387,5 @@ app.get('/', (req, res) => {
     setInterval(runScanner, 60000); // 1m Scanner
     setTimeout(() => setInterval(runExecutor, 60000), 5000); // 1m Executor (Offset)
 })();
+
 
