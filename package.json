@@ -1,0 +1,17 @@
+{
+  "name": "thechartist-blofin",
+  "version": "1.0.0",
+  "description": "Blofin Auto-Trading Bot",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "node-fetch": "^2.6.7",
+    "express": "^4.18.2"
+  },
+  "engines": {
+    "node": ">=14.0.0"
+  }
+}
+
